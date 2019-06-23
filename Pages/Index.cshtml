@@ -1,0 +1,64 @@
+﻿@page
+@model IndexModel
+<!--
+@{
+    ViewData["Title"] = "Home page";
+}
+-->
+<style>
+    body {
+        background: url("https://flask.neocities.org/mss.jpg");
+
+    }
+
+    img:hover {
+        opacity: 0.85;
+        filter: alpha(opacity=50); /* For IE8 and earlier */
+    }
+</style>
+
+<body>
+    <div class="pad" style=" background-color:rgba(224,255,255,0.44);position:absolute;left:0px; width:1290px;height:700px; ">
+        <div>
+            <ul class="container" style=" border-radius:10px; position:absolute; border: 5px; width: 300px; height: 200px; left:22%;top:119px">
+                <li class="nav-item" target="_blank">
+                    <div>
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Grow">
+                            <img style="position:absolute;
+                width: 300px; height: 200px;left:-0.5%;top:-0.6px;border: 8px dashed;" src="https://flask.neocities.org/g.jpg" />
+
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul style="border-radius:10px; border: 2px ;width: 300px; height: 200px; position:absolute; left:57%; top:119px">
+                <li class="nav-item" target="_blank">
+                    <a class="nav-link text-dark" asp-area="" asp-page="/jaiho">
+                        <img class="image" style="position:absolute;width: 300px; height: 200px;left:-0.5%;top:-0.6px;border: 10px;border-style: double;" src="https://flask.neocities.org/jh.jpg" />
+
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <div>
+            <ul style="border-radius:10px; border: 2px; width: 300px; height: 200px; position:absolute;  left:22%;top:404px">
+                <li class="nav-item" target="_blank">
+                    <a class="nav-link text-dark" asp-area="" asp-page="/Xiao"><img style="position:absolute;width: 300px; height: 200px;left:-0.5%;top:-0.6px;border: 10px ridge" src="https://flask.neocities.org/x.jpg" /> </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul style="border-radius:10px; border: 2px;  width: 300px; height: 200px; position:absolute; left:57%; top:404px">
+                <li class="nav-item" target="_blank">
+                    <a class="nav-link text-dark" asp-area="" asp-page="/Comethru"><img style="position:absolute;width: 300px; height: 200px;left:-0.5%;top:-0.6px;border: 8px dotted" src="https://flask.neocities.org/c.jpg" /> </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+
+

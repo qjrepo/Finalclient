@@ -1,0 +1,86 @@
+﻿@page
+@model jaihoModel
+@{
+}
+<script>function ToggleMe() {
+        $('#toggleMe').toggle();
+        $('#nodis').toggle();
+        return false;
+    }
+    function ToggleMe1() {
+        $('#toggleMe').toggle();
+        $('#nodis').show();
+        return false;
+    }</script>
+<body style="background-color:black">
+    <meta charset="UTF-8">
+    <a asp-area="" asp-page="/Index" style="position: relative;font-family:fantasy;top:15px;left:2px; color:dodgerblue;font-size:22px;font-weight:900">Back</a>
+
+    <h1 style="position: absolute;left: 220px;top:30px;color: white">Jai Ho - A.R.Rahman</h1><br /><br />
+
+
+    <a href="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbG">
+        <img style="height:40px;width:40px;left:220px;top:100px;position:absolute" src="https://flask.neocities.org/ss.jpg" />
+    </a>
+
+
+    <a href="https://www.youtube.com/user/Arrahman"><img style="height:40px;width:40px;left:260px;top:100px;position:absolute" src="https://flask.neocities.org/y.jpg" /></a>
+
+
+
+    <div>
+        <img src="https://flask.neocities.org/jhh.jpg" style="width: 350px; height: 240px;position: absolute;left: 220px;top:150px"><br><br><br><br><br>
+        <iframe width="560" height="315" style="position:absolute;bottom:530px; left:660px;width:550px;height:330px" src="https://www.youtube.com/embed/xwwAVRyNmgQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        @*<iframe style="position:absolute;bottom:450px; left:660px;width:550px;height:330px" src="https://www.youtube.com/embed/1WCIrw85zbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>*@
+        @*<iframe src="//player.bilibili.com/player.html?aid=52356434&cid=91635112&page=1"*@
+        @*scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute;bottom:330px; left:660px;width:550px;height:330px"></iframe>*@
+        <p style="position: absolute;left: 220px;font-family:monospace;color: white;top:440px">
+            @*I might lose my mind<br>
+            Waking when the sun's down<br>
+            Riding all these highs<br>
+            Waiting for the comedown<br>
+            Walk these streets with me<br>
+            I'm doing decently<br>
+            Just glad that I can breathe, yeah<br>
+            I'm trying to realize<br>
+            It's alright to not be fine on your own*@
+            @Html.Raw(@Model.Lyrics1)
+            <a id="nodis" onclick="ToggleMe()" style="text-decoration: underline;font-family:cursive;font-size:15px;color:bisque">...more</a>
+        </p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br /><br /><br /><br /><br /><br /><br /><br><br>
+        <p id="toggleMe" style="position: absolute;left: 220px;font-family:monospace;color: white;display:none">
+            @*Now I'm shaking, drinking all this coffee<br>
+            These last few weeks have been exhausting<br>
+            I'm lost in my imagination<br>
+            And there's one thing that I need from you<br>
+            Can you come through, through<br>
+            Through, yeah<br><br>
+            And there's one thing that I need from you<br>
+            Can you come through?<br>
+            Ain't got much to do<br>
+            Too old for my hometown<br>
+            Went to bed at noon<br>
+            Couldn't put my phone down<br>
+            Scrolling patiently<br>
+            It's all the same to me<br>
+            Just faces on a screen, yeah<br><br>
+            I'm trying to realize<br>
+            It's alright to not be fine on your own<br>
+            Now I'm shaking, drinking all this coffee<br>
+            These last few weeks have been exhausting<br>
+            I'm lost in my imagination<br><br>
+            And there's one thing that I need from you<br>
+            Can you come through, through<br>
+            Through, yeah<br>
+            And there's one thing that I need from you<br>
+            Can you come through, through<br>
+            Through, yeah<br>
+            And there's one thing that I need from you<br>
+            Can you come through?*@
+            @Html.Raw(@Model.Lyrics2)
+
+            <a onclick="ToggleMe()" style="text-decoration: underline;font-family:cursive;font-size:15px;color:bisque">close</a><br>
+        </p>
+
+    </div>
+</body>
+
